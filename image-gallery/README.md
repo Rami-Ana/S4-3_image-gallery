@@ -1,59 +1,78 @@
-# ImageGallery
+# Image Gallery
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.3.0-next.0.
+A simple Angular 17+ application that displays an image gallery using standalone components. This project was developed as part of a frontend specialization exercise focused on component creation, integration, styling, and Git workflow.
 
-## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+## Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Standalone Angular components (Gallery and ImageItem)
 
-## Code scaffolding
+Component integration using selectors (<app-gallery>)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Data passing through @Input() signals
 
-```bash
-ng generate component component-name
-```
+List rendering using Angular’s @for block
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Highlighting the first image dynamically
 
-```bash
-ng generate --help
-```
+Responsive gallery layout using CSS Grid
 
-## Building
+Git workflow with feature branching and merging
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Project Structure
 
-## Running unit tests
+src/app/
+│
+├── app.ts              # Root component
+├── app.html            # Renders <app-gallery>
+│
+├── gallery/
+│   ├── gallery.ts      # Standalone Gallery component
+│   ├── gallery.html    # Renders list of images using @for
+│   └── gallery.css     # Grid layout styles
+│
+└── image-item/
+    ├── image-item.ts   # Standalone ImageItem component
+    ├── image-item.html # Displays a single image
+    └── image-item.css  # Image sizing + featured border
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+## Development Server
 
-For end-to-end (e2e) testing, run:
+Start the development server: ng serve
 
-```bash
-ng e2e
-```
+Open your browser at: http://localhost:4200/
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The app reloads automatically when you modify source files.
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## How the Gallery Works
+
+Gallery Component
+Contains an array of image objects
+Iterates using Angular’s @for block
+Passes each image to the ImageItem component
+Marks the first image as featured (isFeatured = true)
+ImageItem Component
+Receives image and isFeatured via @Input() signals
+Displays the image with basic styling
+Applies a special border when featured
+App Component
+Imports the Gallery component
+Renders it using: <app-gallery></app-gallery>
+
+
+
+## Git Workflow
+
+1. Create feature branch: feature/basic-gallery
+2. Implement Gallery + ImageItem components
+3. Commit changes
+4. Switch to main
+5. Merge feature branch
+6. Resolve conflicts if needed and push
