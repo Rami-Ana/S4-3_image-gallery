@@ -4,6 +4,7 @@ import { ImageItem } from '../image-item/image-item';
 
 @Component({
   imports: [ImageItem],
+  standalone: true,
   selector: 'app-gallery',
   styleUrl: './gallery.css',
   templateUrl: './gallery.html',
@@ -28,7 +29,7 @@ export class Gallery {
   },
       {
     id: '4',
-    src : 'https://picsum.photos/id/226/200/300',
+    src : 'https://picsum.photos/id/231/200/300',
     alt: 'Imagen 4'
   },
   {
@@ -38,7 +39,7 @@ export class Gallery {
   },
   {
     id: '6',
-    src: 'https://picsum.photos/id/224/200/300',
+    src: 'https://picsum.photos/id/233/200/300',
     alt: 'Imagen 6'
   }
 ]

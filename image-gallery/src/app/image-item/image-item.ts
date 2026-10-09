@@ -4,6 +4,7 @@ import { Image } from '../interfaces/image-interface';
 @Component({
   imports: [],
   selector: 'app-image-item',
+  standalone: true,
   styleUrl: './image-item.css',
   templateUrl: './image-item.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
