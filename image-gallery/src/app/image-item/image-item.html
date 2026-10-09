@@ -1,5 +1,11 @@
 <p>image-item works!</p>
 
 <div [class.featured]="isFeatured()">
+    
+  <img [src]="image()?.src" [alt]="image()?.alt">
+
+    <!-- @if (image()) {
     <img [src]="image().src" [alt]="image().alt">
+    } -->
+
 </div>

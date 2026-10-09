@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Image } from '../interfaces/image-interface';
+import { ImageItem } from '../image-item/image-item';
 
 @Component({
-  imports: [],
+  imports: [ImageItem],
   selector: 'app-gallery',
   styleUrl: './gallery.css',
   templateUrl: './gallery.html',
