@@ -10,6 +10,6 @@ import { Image } from '../interfaces/image-interface';
 })
 
 export class ImageItem { // componente hijo
-  image = input.required<Image>(); 
+  image = input.required<Image>();
   isFeatured = input.required<boolean>();
 }
