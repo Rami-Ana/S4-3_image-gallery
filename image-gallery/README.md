@@ -1,24 +1,17 @@
 # Image Gallery
 
-A simple Angular 17+ application that displays an image gallery using standalone components. This project was developed as part of a frontend specialization exercise focused on component creation, integration, styling, and Git workflow.
+A simple Angular 17+ application that displays an image gallery using components. This project was developed as part of a frontend specialization exercise focused on component creation, integration, styling, and Git workflow.
 
 
 
 ## Features
 
-Standalone Angular components (Gallery and ImageItem)
-
-Component integration using selectors (<app-gallery>)
-
-Data passing through @Input() signals
-
-List rendering using Angular’s @for block
-
-Highlighting the first image dynamically
-
-Responsive gallery layout using CSS Grid
-
-Git workflow with feature branching and merging
+• Standalone Angular components (Gallery and ImageItem)
+• Component integration using selectors (<app-gallery>)
+• Data passing through @Input() signals
+• List rendering using Angular’s @for block
+• Highlighting the first image dynamically
+• Git workflow with feature branching and merging
 
 
 
@@ -43,28 +36,26 @@ src/app/
 
 ## Development Server
 
-Start the development server: ng serve
-
-Open your browser at: http://localhost:4200/
-
-The app reloads automatically when you modify source files.
+1. Start the development server: ng serve
+2. Open your browser at: http://localhost:4200/
+3. The app reloads automatically when you modify source files.
 
 
 
 ## How the Gallery Works
 
-Gallery Component
-Contains an array of image objects
-Iterates using Angular’s @for block
-Passes each image to the ImageItem component
-Marks the first image as featured (isFeatured = true)
-ImageItem Component
-Receives image and isFeatured via @Input() signals
-Displays the image with basic styling
-Applies a special border when featured
-App Component
-Imports the Gallery component
-Renders it using: <app-gallery></app-gallery>
+• Gallery Component
+• Contains an array of image objects
+• Iterates using Angular’s @for block
+• Passes each image to the ImageItem component
+• Marks the first image as featured (isFeatured = true)
+• ImageItem Component
+• Receives image and isFeatured via @Input() signals
+• Displays the image with basic styling
+• Applies a special border when featured
+• App Component
+• Imports the Gallery component
+• Renders it using: <app-gallery></app-gallery>
 
 
 
