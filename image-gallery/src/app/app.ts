@@ -8,5 +8,4 @@ import { Gallery } from './gallery/gallery';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('image-gallery');
 }
