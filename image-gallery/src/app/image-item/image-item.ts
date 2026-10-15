@@ -4,12 +4,12 @@ import { Image } from '../interfaces/image-interface';
 @Component({
   imports: [],
   selector: 'app-image-item',
-  standalone: true,
   styleUrl: './image-item.css',
   templateUrl: './image-item.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class ImageItem { // componente hijo
-  image = input<Image>(); 
-  isFeatured = input<boolean>();
+  image = input.required<Image>(); 
+  isFeatured = input.required<boolean>();
 }

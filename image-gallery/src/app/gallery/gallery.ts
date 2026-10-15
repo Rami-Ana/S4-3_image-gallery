@@ -4,7 +4,6 @@ import { ImageItem } from '../image-item/image-item';
 
 @Component({
   imports: [ImageItem],
-  standalone: true,
   selector: 'app-gallery',
   styleUrl: './gallery.css',
   templateUrl: './gallery.html',
